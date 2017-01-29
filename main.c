@@ -1,7 +1,7 @@
 #include<avr/io.h>
 #include<string.h>
 #include<stdlib.h>
-#include"sha1.c"
+#include"avr-sha1.c"
 
 void UART_transmit(unsigned char data);
 int testSha1();

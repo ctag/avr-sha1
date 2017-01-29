@@ -14,8 +14,8 @@
  *
  */
 
-#ifndef _SHA1_H_
-#define _SHA1_H_
+#ifndef AVR_SHA1_H
+#define AVR_SHA1_H
 
 #include <stdint.h>
 /*
@@ -70,4 +70,4 @@ int SHA1Input(  SHA1Context *,
 int SHA1Result( SHA1Context *,
                uint8_t Message_Digest[SHA1HashSize]);
 
-#endif
+#endif // AVR_SHA1_H
