@@ -28,6 +28,10 @@
  *
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 #ifndef _SHA_enum_
 #define _SHA_enum_
 enum
@@ -37,7 +41,7 @@ enum
     shaInputTooLong,    /* input data too long */
     shaStateError       /* called Input after Result */
 };
-#endif
+#endif // _SHA_enum_
 #define SHA1HashSize 20
 
 /*
@@ -69,5 +73,9 @@ int SHA1Input(  SHA1Context *,
               unsigned int);
 int SHA1Result( SHA1Context *,
                uint8_t Message_Digest[SHA1HashSize]);
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
 
 #endif // AVR_SHA1_H
